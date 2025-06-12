@@ -1,0 +1,75 @@
+/* 1. Box sizing universel */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+/* 2. Suppression des marges et paddings */
+* { margin: 0; padding: 0; }
+
+/* 3. Police par défaut uniforme */
+html, body {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* 4. Line-height accessible et text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 5. Listes sans puces */
+ol, ul { list-style: none; }
+
+/* 6. Images et médias responsives */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 7. Pas de border par défaut */
+fieldset, img { border: 0; }
+
+/* 8. Tableaux sans espace */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 9. Suppression du border sur les iframes */
+iframe { border: 0; }
+
+/* 10. Inheritance des fonts pour les inputs */
+input, button, textarea, select {
+  font: inherit;
+  margin: 0;
+}
+
+/* 11. Titres normalisés */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+/* 12. Paragraphe wrap amélioré */
+p {
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+/* 13. Blockquote, citation sans guillemets */
+blockquote, q { quotes: none; }
+blockquote::before, blockquote::after,
+q::before, q::after { content: ''; }
+
+/* 14. HTML5 display block */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+/* 15. Root stacking context pour SPA */
+#root, #__next { isolation: isolate; }
