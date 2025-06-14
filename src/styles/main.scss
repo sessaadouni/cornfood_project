@@ -1,7 +1,11 @@
 @use 'reset';
+
+@use "tailwindcss";
+
 @use 'fonts';
 @use 'variables';
 @use 'mixins';
 @use 'base';
-@use 'layout';
 @use 'components';
+
+@config "../../tailwind.config.js";

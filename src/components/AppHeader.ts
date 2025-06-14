@@ -1,3 +1,5 @@
+import '../styles/layout/header.scss'
+
 export class AppHeader extends HTMLElement {
   constructor() {
     super();
@@ -7,6 +9,7 @@ export class AppHeader extends HTMLElement {
     this.innerHTML = `
       <header>
         <p class="underline">test</p>
+        <h2>haha</h2>
       </header>
     `
   }

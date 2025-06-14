@@ -1,3 +1,6 @@
-h1 {
-  @apply text-red-500 text-xl text-center;
+@use "tailwindcss";
+@config "../../tailwind.config.js";
+
+p {
+  @apply text-bleu;
 }

@@ -1,0 +1,13 @@
+@use '../variables' as vars;
+@use "tailwindcss";
+@config "../../../tailwind.config.js";
+
+header {
+  p {
+    @apply text-6xl text-rose;
+  }
+  
+  h2 {
+    @apply font-bold font-rockwell;
+  }
+}

@@ -1,3 +1,5 @@
+import '../styles/layout/footer.scss'
+
 export class AppFooter extends HTMLElement {
   constructor() {
     super();
@@ -6,7 +8,7 @@ export class AppFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer>
-        <p class="font-2xl">test</p>
+        <p class="">test</p>
       </footer>
     `
   }
