@@ -1,1 +1,111 @@
 @use "tailwindcss";
+@config "../../../tailwind.config.js";
+
+.footer {
+  @apply bg-linear-to-tr from-bleu/70 from-20% via-rose to-jaune 
+      text-white 
+      pt-24 pb-12;
+  
+  img {
+    @apply h-14;
+  }
+  
+  &-contact {
+    @apply flex flex-col md:flex-wrap md:flex-row justify-between my-0 -mx-4;
+    
+    &__section {
+      @apply sm:flex-[0_0_41.666667%] 
+          md:max-w-[41.666667%] 
+          py-0 px-4;
+      
+      h2 {
+        @apply text-5xl;
+      }
+      
+      &-wrapper {
+        @apply relative;
+        
+        &__container {
+          @apply flex items-center;
+          
+          .separator {
+            @apply block 
+                h-px w-16 
+                bg-white 
+                my-0 mx-6;
+          }
+        }
+        
+        &::before, &::after {
+          @apply block content-[''] 
+              h-16 w-px 
+              bg-white;
+        }
+        
+        &::before {
+          @apply my-4 mr-0 ml-[2.1rem];
+        }
+        
+        &::after {
+          @apply mt-4 mr-0 mb-0 ml-[12.6rem];
+        }
+      }
+      
+      .address {
+        @apply w-[25%] sm:max-md:w-[25%] md:w-[30%] 
+            my-5 ml-32 sm:max-md:ml-24 md:ml-22
+            text-white text-center text-lg;
+      }
+      
+      .social-links {
+        @apply flex justify-center 
+            md:w-[55%] 
+            mt-18 mb-6 md:mb-0 
+            gap-x-8;
+      }
+    }
+    
+    &__form {
+      @apply flex flex-col items-center 
+          sm:flex-[0_0_58.333333%] 
+          py-0 px-4 
+          md:max-w-[58.333333%];
+      
+      input, textarea {
+        @apply border-none focus:ring-0 focus:border-none rounded-[30px] 
+            text-white 
+            w-full 
+            mb-4 py-5 px-8 
+            bg-white/30;
+      }
+      
+      ::placeholder {
+        @apply text-white/60 text-lg;
+      }
+      
+      textarea {
+        @apply z-1;
+      }
+      
+      button {
+        @apply relative 
+            border-none rounded-[40px] 
+            bg-rose shadow-lg 
+            py-3 px-12 -translate-y-13 z-2 
+            text-white/90 text-[14px] tracking-wide;
+      }
+    }
+  }
+  
+  &-copyright {
+    @apply flex flex-col items-center justify-center;
+    
+    &::before {
+      @apply block content-[''] 
+          h-px w-[50%] 
+          bg-white 
+          mx-0 mt-28 mb-10;
+    }
+  }
+  
+}

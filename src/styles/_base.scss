@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+h2, h3 {
+  font-family: "Rockwell";
+}
+
 p, blockquote {
   overflow-wrap: break-word;
 }
@@ -41,3 +45,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 #root, #__next { isolation: isolate; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
